@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { Employee} from '../../models/employee';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { Employee } from '../../models/employee';
 import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'employee-table',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './employee-table.component.html',
   styleUrl: './employee-table.component.css'
 })
